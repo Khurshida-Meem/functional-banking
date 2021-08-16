@@ -5,6 +5,6 @@ document.getElementById('login-submit').addEventListener('click', function () {
     const userpassword = passwordField.value;
 
     if (userEmail == 'abcd@gmail.com' && userpassword == 'abcd') {
-        window.location.href = 'banking.html';
+        window.location.href = "banking.html";
     }
 });
