@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <!-- tailwind cdn -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body style="background-color: lightgrey;">
+    <header>
+        <h1 class="text-5xl text-center font-bold mt-10	">Let's Make some <span class="text-purple-600">Money</span>
+        </h1>
+    </header>
+    <main class=" w-3/4 mx-auto ">
+        <!-- balance and transection -->
+        <section class="my-12">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-blue-300 p-8 rounded">
+                    <h3 class="text-5xl">Deposit</h3>
+                    <h4 class="text-3xl">$<span id="total-deposit">00</span></h4>
+                </div>
+                <div class="bg-green-300 p-8 rounded">
+                    <h3 class="text-5xl">Withdrow</h3>
+                    <h4 class="text-3xl">$<span id="total-widhdrow">00</span></h4>
+                </div>
+                <div class="bg-yellow-300 p-8 rounded">
+                    <h3 class="text-5xl">Balance</h3>
+                    <h4 class="text-3xl">$<span id="current-balence">1240</span></h4>
+                </div>
+            </div>
+        </section>
+        <!-- deposit and withdrow -->
+        <section>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-red-100">
+                    <h3 class="text-3xl text-center mt-4 font-bold">Please Deposit</h3>
+                    <div action="" class="mx-8 py-5">
+                        <input type="text" id="deposit-amount" class="p-2 block rounded-lg w-3/4 focus:outline-none rounded-full py-3 px-6"
+                            placeholder="$ Your Deposit Amount">
+                        <br>
+                        <button id="deposit-button"
+                            class="bg-pink-500 text-white font-medium py-2 px-4 rounded-lg rounded-full py-3 px-6">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-green-100">
+                    <h3 class="text-3xl text-center mt-4 font-bold">Please Withdrow</h3>
+                    <div action="" class="mx-8 py-5">
+                        <input type="text" id="withdrow-amount" class="p-2 block rounded-lg w-3/4 focus:outline-none rounded-full py-3 px-6"
+                            placeholder="$ Your Withdrow Amount">
+                        <br>
+                        <button id="withdrow-button"
+                            class="bg-pink-500 text-white font-medium py-2 px-4 rounded-lg rounded-full py-3 px-6">Withdrow</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/banking.js"></script>
+</body>
+</html>
